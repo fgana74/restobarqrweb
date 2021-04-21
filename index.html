@@ -23,7 +23,7 @@
                 height:25vh;
                 display:grid;
                 grid-template-columns:10% 70% 20%;
-                background-color:floralwhite;
+                background-color:darkturquoise;
                 position: fixed;
             }
             .cont-1 h2{
@@ -58,7 +58,7 @@
                 display: grid;
                 grid-template-columns: auto repeat(5,12%);
                 grid-column:1 / span 3;
-                margin:0px 0px 20px 0px;
+                margin:0px 40px 20px 0px;
             }
             .cont-1 #menu a{
                 font-size: 1.5em;
@@ -84,13 +84,13 @@
 
             .cont-3{
                 display: grid;
-                grid-template-columns: 55% auto;
+                grid-template-columns: 60% auto;
                 grid-gap:20px;
                 padding:40px;
                 margin-top:25vh;
                 height:75vh;
                 width:100vw;
-                background-image: url(img/menu-1.jpg);
+                background-image: url(img/menu-11.jpg);
                 background-position: 10% 10%;
                 
                 background-repeat: no-repeat;
@@ -181,6 +181,41 @@
                 color:#c1c1c1;
                 text-decoration-line:line-through;
             }
+
+            .cont-6{
+                display: grid;
+                grid-gap:20px;
+                padding:40px;
+                margin-top:25vh;
+                height:75vh;
+                width:100vw;
+            }
+
+            .cont-7{
+                padding:40px;
+                margin-top:25vh;
+                height:75vh;
+                width:100vw;
+                text-align: center;
+            }
+            
+            .cont-7 #form-c form{
+                display: grid;
+                grid-template-columns: 20% auto;
+                grid-gap:30px;
+                margin:50px;
+            }
+            .cont-7 #form-c form span{
+                font-size: 1.5em;
+                font-family: 'Red Rose', cursive;
+                text-align: right;
+            }
+            .cont-7 #form-btn button span{
+                font-size: 1.3em;
+                font-family: 'Red Rose', cursive;
+                text-align: center;
+            }
+
             
         }
 
@@ -235,13 +270,17 @@
         <div class="cont-1">
             <h3 class="text-warning"><i class="fa fa-qrcode fa-3x"></i></h3>
             <h2 class="text-warning">RestobarQR</h2>
-            <span><button class="btn btn-md btn-success text-white">Acceso Clientes</button></span>
+            <span style="margin:10px">
+                <!--<button class="btn btn-md btn-success text-white">Acceso Clientes</button>-->
+                <div class="btn btn-lg btn-primary" style="border-radius:50px;"><i class="fa fa-facebook-square fa-3x" style="padding:5px"></i></div>
+                <div class="btn btn-lg btn-success" style="border-radius:50px;"><i class="fa fa-whatsapp fa-3x" style="padding:5px"></i></div>
+            </span>
             <div id="menu">
                 <a class="btn btn-info" href="#que" style="grid-column-start:2;">¿ Qué es ?</a>
                 <a class="btn btn-info" href="#ventajas">Ventajas</a>
                 <a class="btn btn-info" href="#precios">Precios</a>
-                <a class="btn btn-info" href="#que">Clientes</a>
-                <a class="btn btn-info" href="#que">Contacto</a>
+                <a class="btn btn-info" href="#clientes">Clientes</a>
+                <a class="btn btn-info" href="#contacto">Contacto</a>
             </div>
         </div>
         <div class="cont-2"></div>
@@ -266,41 +305,76 @@
                 </div>
             </div>    
         </div>
-        <div class="cont-5" id="precios">
+        <span id="precios"></span>
+        <div class="cont-5">
             <!--<h2 class="bg-info text-white" style="border-radius:10px">Nuestros Precios</h2>-->
             <div id="lst-p">
                 <span style="border:5px solid #35a745">
                     <h3 class="bg-success">Plan Gratis</h3>
-                    <p>Función Específica 1</p>
-                    <p>Función Específica 2</p>
-                    <p class="noact">Función Específica 3</p>
-                    <p class="noact">Función Específica 4</p>
-                    <p class="noact">Función Específica 5</p>
-                    <p class="noact">Función Específica 6</p>
-                    <h3 class="bg-success">$ 99.999</h3>
+                    <p>Gestión de Productos (6 Productos)</p>
+                    <p>Gestión de Categorías (1 Categoría)</p>
+                    <p>Permite hasta 8 Mesas</p>
+                    <p class="noact">Gestión de Pedidos</p>
+                    <p class="noact">Seguimiento de Pedidos</p>
+                    <p class="noact">Exportación/Importación de Datos</p>
+                    <h3 class="bg-success">0 UF Mensual</h3>
                 </span>
                 <span style="border:5px solid #217bff">
                     <h3 class="bg-primary">Plan Standard</h3>
-                    <p>Función Específica 1</p>
-                    <p>Función Específica 2</p>
-                    <p>Función Específica 3</p>
-                    <p>Función Específica 4</p>
-                    <p class="noact">Función Específica 5</p>
-                    <p class="noact">Función Específica 6</p>
-                    <h3 class="bg-primary">$ 99.999</h3>
+                    <p>Gestión de Productos (12 Productos)</p>
+                    <p>Gestión de Categorías (3 Categorias)</p>
+                    <p>Permite hasta 12 Mesas</p>
+                    <p class="noact">Gestión de Pedidos</p>
+                    <p class="noact">Seguimiento de Pedidos</p>
+                    <p class="noact">Exportación/Importación de Datos</p>
+                    <h3 class="bg-primary">0.5 UF Mensual</h3>
                 </span>
                 <span style="border:5px solid #dc3546">
                     <h3 class="bg-danger">Plan Avanzado</h3>
-                    <p>Función Específica 1</p>
-                    <p>Función Específica 2</p>
-                    <p>Función Específica 3</p>
-                    <p>Función Específica 4</p>
-                    <p>Función Específica 5</p>
-                    <p>Función Específica 6</p>
-                    <h3 class="bg-danger">$ 99.999</h3>
+                    <p>Gestión de Productos (Ilimitado)</p>
+                    <p>Gestión de Categorías (Ilimitado)</p>
+                    <p>Mesas Ilimitadas</p>
+                    <p>Gestión de Pedidos</p>
+                    <p>Seguimiento de Pedidos</p>
+                    <p>Exportación/Importación de Datos</p>
+                    <h3 class="bg-danger">1.0 UF Mensual</h3>
                 </span>
             </div>    
-            <!--<div><img src="img/menu-1.jpg" class="img-fluid"></div>-->
+        </div>
+        <span id="clientes"></span>
+        <div class="cont-6">
+            <h2 class="bg-info text-white" style="border-radius:10px">Nuestros Clientes</h2>
+            <div id="lst-c">
+                
+            </div>    
+        </div>
+        <div class="cont-7" id="contacto">
+            <div id="form-c">
+                <form name="form-contacto" id="form-contacto" method="POST">
+                    <span>Nombre Completo</span>
+                    <input type="text" name="txtnom" id="txtnom" maxlength="50" class="form-control form-control-lg" placeholder="Ingrese su nombre completo" required>
+                    <span>Correo Electrónico</span>
+                    <input type="email" name="txtema" id="txtema" maxlength="50" class="form-control form-control-lg" placeholder="Ingrese su correo electrónico" required>
+                    <span>Teléfono Móvil</span>
+                    <input type="text" name="txtfon" id="txtfon" maxlength="9" class="form-control form-control-lg" placeholder="Ingrese su teléfono móvil" pattern="[0-9]{9}" required>
+                    <span>Mensaje/Comentario</span>
+                    <textarea name="txtmen" id="txtmen" class="form-control form-control-lg" style="resize:none;height:150px" maxlength="200" placeholder="Ingrese su mensaje y/o comentario" required></textarea>
+                    <span>&nbsp;</span>
+                    <span style="display:grid;grid-template-columns:33% 33% 34%;overflow-y:hidden">
+                        <!--
+                        <button type="button" class="btn btn-lg btn-primary">
+                            <i class="fa fa-facebook-square fa-2x"></i><span style="padding:0px 0px 20px 10px;">Facebook</span>
+                        </button>
+                        <button type="button" class="btn btn-lg btn-success">
+                            <i class="fa fa-whatsapp fa-2x"></i><span style="padding:0px 0px 20px 10px;">Whatsapp</span>
+                        </button>
+                        -->
+                        <button class="btn btn-lg btn-info" style="grid-column-start:3">
+                            <i class="fa fa-envelope fa-2x"></i><span style="padding:0px 0px 20px 10px;">Enviar Formulario</span>
+                        </button>
+                    </span>
+                </form>
+            </div>    
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -310,6 +384,9 @@
                 $("#menu a").removeClass("btn-warning");
                 $(this).addClass("btn-warning");
             });
+            $("#form-contacto").submit(function(){
+                return false;
+            })
         });
     </script>
 </body>
