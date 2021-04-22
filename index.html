@@ -190,6 +190,11 @@
                 height:75vh;
                 width:100vw;
             }
+            .cont-6 #lst-c span{
+                padding:50px;
+                font-size: 1.8em;
+                font-family: 'Red Rose', cursive;
+            }
 
             .cont-7{
                 padding:40px;
@@ -343,10 +348,7 @@
         </div>
         <span id="clientes"></span>
         <div class="cont-6">
-            <h2 class="bg-info text-white" style="border-radius:10px">Nuestros Clientes</h2>
-            <div id="lst-c">
-                
-            </div>    
+            <div id="lst-c" style="display:grid;grid-template-columns:repeat(2,50%);overflow-y:hidden"></div>    
         </div>
         <div class="cont-7" id="contacto">
             <div id="form-c">
@@ -380,13 +382,14 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
+            $("#lst-c").load("php/lusr.php");
             $("#menu a").click(function(){
                 $("#menu a").removeClass("btn-warning");
                 $(this).addClass("btn-warning");
             });
             $("#form-contacto").submit(function(){
                 return false;
-            })
+            });
         });
     </script>
 </body>
