@@ -18,265 +18,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" rel="stylesheet">
-
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-        @media screen and (min-width: 800px){
-            .cont-1{
-                width:100vw;
-                height:25vh;
-                display:grid;
-                grid-template-columns:10% 70% 20%;
-                background-color:orangered;
-                position: fixed;
-            }
-            .cont-1 h2{
-                font-size: 6em;
-                font-family: 'Red Rose', cursive;
-                letter-spacing: -1px;
-                padding: 10px;
-                overflow-y: hidden;
-                text-shadow:2px 2px #000;
-                -webkit-text-shadow:2px 2px #000;
-                -moz-text-shadow:2px 2px #000;
-                
-            }
-            .cont-1 h3{
-                font-size: 1.7em;
-                padding:33px 0px 30px 30px;
-                color: white;
-                text-align:right;
-                overflow-y: hidden;
-                text-shadow:2px 2px #000;
-                -webkit-text-shadow:2px 2px #000;
-                -moz-text-shadow:2px 2px #000;
-                
-            }
-            .cont-1 button{
-                width:80%;
-                margin:20px;
-                font-size: 22px;
-                font-family: 'Red Rose', cursive;
-            }
-            .cont-1 #menu{
-                display: grid;
-                grid-template-columns: auto repeat(5,12%);
-                grid-column:1 / span 3;
-                margin:0px 40px 20px 0px;
-            }
-            .cont-1 #menu a{
-                font-size: 1.5em;
-                font-family: 'Red Rose', cursive;
-                padding:10px;
-                margin:0px 7px 0px 0px;
-                overflow-y: hidden;
-            }
-            .activo{
-                background-color: forestgreen;
-            }
-
-            .cont-2{
-                width:100vw;
-                margin-top:25vh;
-                min-height:75vh;
-                background-image: url(img/head-3.jpg);
-                background-position: 50% 50%;
-                background-repeat:no-repeat;
-                background-size: cover;
-            }  
-            
-
-            .cont-3{
-                display: grid;
-                grid-template-columns: 60% auto;
-                grid-gap:20px;
-                padding:40px;
-                margin-top:25vh;
-                height:75vh;
-                width:100vw;
-                background-image: url(img/menu-11.jpg);
-                background-position: 10% 10%;
-                
-                background-repeat: no-repeat;
-                /*clip-path: polygon(0 0, 100% 0%, 49% 54%, 0% 100%);*/
-            }
-
-            .cont-3 h2{
-                padding:20px;
-                font-size: 3.5em;
-                font-family: 'Red Rose', cursive;
-            }
-            .cont-3 h3{
-                padding:20px;
-                font-size: 28px;
-                font-family: 'Red Rose', cursive;
-                line-height: 1.5em;
-                text-align: justify;
-                
-            }
-
-
-            .cont-4{
-                display: grid;
-                grid-template-columns: auto 65%;
-                grid-gap:20px;
-                padding:40px;
-                margin-top:25vh;
-                height:75vh;
-                width:100vw;
-                background-image: url(img/menu-2.jpg);
-                background-position: 10% 10%;
-                background-repeat: no-repeat;
-                /*clip-path: polygon(0 0, 100% 0%, 49% 54%, 0% 100%);*/
-            }
-
-            .cont-4 h2{
-                padding:20px;
-                font-size: 3.5em;
-                font-family: 'Red Rose', cursive;
-            }
-            .cont-4 #lst-v{
-                display: grid;
-                grid-gap:15px;
-                padding:30px;
-            }
-            .cont-4 #lst-v span{
-                font-size: 1.35em;
-                font-family: 'Red Rose', cursive;
-            }
-
-
-
-            .cont-5{
-                display: grid;
-                grid-gap:20px;
-                padding:40px;
-                margin-top:25vh;
-                height:75vh;
-                width:100vw;
-            }
-            .cont-5 h2{
-                padding:10px;
-                font-size: 3.5em;
-                font-family: 'Red Rose', cursive;
-            }
-            .cont-5 #lst-p{
-                display: grid;
-                grid-template-columns: repeat(3,33%) auto;
-            }
-            .cont-5 #lst-p span{
-                margin:50px;
-                border-radius: 10px;
-                overflow-y: hidden;
-            }
-            .cont-5 #lst-p h3{
-                padding:20px;
-                font-size: 1.8em;
-                font-family: 'Red Rose', cursive;
-                color:floralwhite;
-                text-align: center;
-            }
-            .cont-5 #lst-p p{
-                margin:20px;
-                font-size: 1.3em;
-                font-family: 'Red Rose', cursive;
-            }
-            .cont-5 .noact{
-                color:#c1c1c1;
-                text-decoration-line:line-through;
-            }
-
-            .cont-6{
-                display: grid;
-                grid-gap:20px;
-                padding:40px;
-                margin-top:25vh;
-                height:75vh;
-                width:100vw;
-            }
-            .cont-6 #lst-c span{
-                padding:50px;
-                font-size: 1.8em;
-                font-family: 'Red Rose', cursive;
-            }
-
-            .cont-7{
-                padding:40px;
-                margin-top:25vh;
-                height:75vh;
-                width:100vw;
-                text-align: center;
-            }
-            
-            .cont-7 #form-c form{
-                display: grid;
-                grid-template-columns: 20% auto;
-                grid-gap:30px;
-                margin:50px;
-            }
-            .cont-7 #form-c form span{
-                font-size: 1.5em;
-                font-family: 'Red Rose', cursive;
-                text-align: right;
-            }
-            .cont-7 #form-btn button span{
-                font-size: 1.3em;
-                font-family: 'Red Rose', cursive;
-                text-align: center;
-            }
-
-            
-        }
-
-        @media screen and (max-width: 799px){
-            .cont-1{
-                width:100vw;
-                height:20vh;
-                display:grid;
-                grid-template-columns:15% 85%;
-            }
-            .cont-1 h2{
-                font-size: 4em;
-                font-family: 'Red Rose', cursive;
-                letter-spacing: -1px;
-                text-shadow:2px 2px #000;
-                -webkit-text-shadow:2px 2px #000;
-                -moz-text-shadow:2px 2px #000;
-            }
-            .cont-1 h3{
-                font-size: 1.1em;
-                text-align:right;
-                margin:15px 5px 0px 0px;
-                text-shadow:2px 2px #000;
-                -webkit-text-shadow:2px 2px #000;
-                -moz-text-shadow:2px 2px #000;
-            }
-            .cont-1 span{
-                grid-column:1 / span 2;
-            }
-
-            .cont-1 span button{
-                width:95%;
-                margin:0px 10px 20px 10px;
-                font-size: 22px;
-                font-family: 'Red Rose', cursive;
-            }
-
-            .cont-2{
-                width:100vw;
-                min-height:80vh;
-                background-image: url(img/head-3.jpg);
-                background-position: 50% 50%;
-                background-repeat:no-repeat;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 
 </head>
 <body>
@@ -284,24 +26,32 @@
         <div class="cont-1">
             <h3 class="text-warning"><i class="fa fa-qrcode fa-3x"></i></h3>
             <h2 class="text-warning">RestobarQR</h2>
-            <span style="margin:10px">
+            <span style="margin:10px" id="cont-rrss">
                 <!--<button class="btn btn-md btn-success text-white">Acceso Clientes</button>-->
                 <div class="btn btn-lg btn-primary" style="border-radius:50px;"><i class="fa fa-facebook-square fa-3x" style="padding:5px"></i></div>
                 <div class="btn btn-lg btn-success" style="border-radius:50px;"><i class="fa fa-whatsapp fa-3x" style="padding:5px"></i></div>
+            </span> 
+            <span id="cont-bars">
+                <a class="btn" data-toggle="collapse" data-target="#menu">
+                  <span><i class="fa fa-bars fa-3x"></i></span>
+                </a>
             </span>
-            <div id="menu">
-                <a class="btn btn-info" href="#que" style="grid-column-start:2;">¿ Qué es ?</a>
+              
+        </div>
+        <div class="cont-menu">
+            <div class="collapse" id="menu">
+                <a class="btn btn-info primero" href="#que">¿ Qué es ?</a>
                 <a class="btn btn-info" href="#ventajas">Ventajas</a>
                 <a class="btn btn-info" href="#precios">Precios</a>
                 <a class="btn btn-info" href="#clientes">Clientes</a>
                 <a class="btn btn-info" href="#contacto">Contacto</a>
-            </div>
+            </div>   
         </div>
         <div class="cont-2"></div>
         <span id="que"></span>
         <div class="cont-3">
             <div>
-                <h2 class="bg-success text-white" style="border-radius:10px">¿ Que es RestobarQR ?</h2>
+                <h2 class="bg-success text-white" style="border-radius:2px">¿ Que es RestobarQR ?</h2>
                 <h3>
                     <span class="font-weight-bold">RestobarQR</span> es una plataforma web que permite a los bares y restaurantes publicar su carta 
                     de productos en forma digital a través de un código QR. Esto permite agilizar los procesos de solicitud por parte de los clientes 
@@ -315,14 +65,14 @@
         </div>
         <span id="ventajas"></span>
         <div class="cont-4">
-            <div style="grid-column-start: 2;">
-                <h2 class="bg-primary text-white" style="border-radius:10px">Ventajas de RestobarQR</h2>
+            <div id="c4v">
+                <h2 class="bg-primary text-white" style="border-radius:2px">Ventajas de RestobarQR</h2>
                 <div id="lst-v">
-                    <span><i class="fa fa-check text-success fa-2x"></i><span>Agiliza los procesos en la solicitud de pedidos</span></span>
-                    <span><i class="fa fa-check text-success fa-2x"></i><span>Acceso disponible desde diferentes dispositivos</span></span>
-                    <span><i class="fa fa-check text-success fa-2x"></i><span>Plataforma web 100% autoadministrable</span></span>
-                    <span><i class="fa fa-check text-success fa-2x"></i><span>Informes de gestión y estadísticas</span></span>
-                    <span><i class="fa fa-check text-success fa-2x"></i><span>Soporte personalizado 24x7</span></span>
+                    <span><i class="fa fa-check text-success fa-2x"></i></span><span>Agiliza los procesos en la solicitud de pedidos</span>
+                    <span><i class="fa fa-check text-success fa-2x"></i></span><span>Acceso disponible desde diferentes dispositivos</span>
+                    <span><i class="fa fa-check text-success fa-2x"></i></span><span>Plataforma web 100% autoadministrable</span>
+                    <span><i class="fa fa-check text-success fa-2x"></i></span><span>Informes de gestión y estadísticas</span>
+                    <span><i class="fa fa-check text-success fa-2x"></i></span><span>Soporte personalizado 24x7</span>
                 </div>
             </div>    
         </div>
@@ -364,21 +114,21 @@
         </div>
         <span id="clientes"></span>
         <div class="cont-6">
-            <div id="lst-c" style="display:grid;grid-template-columns:repeat(2,50%);overflow-y:hidden"></div>    
+            <div id="lst-c"></div>    
         </div>
         <div class="cont-7" id="contacto">
             <div id="form-c">
                 <form name="form-contacto" id="form-contacto" method="POST">
-                    <span>Nombre Completo</span>
+                    <label>Nombre Completo</label>
                     <input type="text" name="txtnom" id="txtnom" maxlength="50" class="form-control form-control-lg" placeholder="Ingrese su nombre completo" required>
-                    <span>Correo Electrónico</span>
+                    <label>Correo Electrónico</label>
                     <input type="email" name="txtema" id="txtema" maxlength="50" class="form-control form-control-lg" placeholder="Ingrese su correo electrónico" required>
-                    <span>Teléfono Móvil</span>
+                    <label>Teléfono Móvil</label>
                     <input type="text" name="txtfon" id="txtfon" maxlength="9" class="form-control form-control-lg" placeholder="Ingrese su teléfono móvil" pattern="[0-9]{9}" required>
-                    <span>Mensaje/Comentario</span>
+                    <label>Mensaje/Comentario</label>
                     <textarea name="txtmen" id="txtmen" class="form-control form-control-lg" style="resize:none;height:150px" maxlength="200" placeholder="Ingrese su mensaje y/o comentario" required></textarea>
-                    <span>&nbsp;</span>
-                    <span style="display:grid;grid-template-columns:33% 33% 34%;overflow-y:hidden">
+                    <label>&nbsp;</label>
+                    <span id="form-btn">
                         <!--
                         <button type="button" class="btn btn-lg btn-primary">
                             <i class="fa fa-facebook-square fa-2x"></i><span style="padding:0px 0px 20px 10px;">Facebook</span>
@@ -387,7 +137,7 @@
                             <i class="fa fa-whatsapp fa-2x"></i><span style="padding:0px 0px 20px 10px;">Whatsapp</span>
                         </button>
                         -->
-                        <button class="btn btn-lg btn-info" style="grid-column-start:3">
+                        <button class="btn btn-lg btn-info">
                             <i class="fa fa-envelope fa-2x"></i><span style="padding:0px 0px 20px 10px;">Enviar Formulario</span>
                         </button>
                     </span>
@@ -396,6 +146,8 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
             $("#lst-c").load("php/lusr.php");
@@ -406,7 +158,22 @@
             $("#form-contacto").submit(function(){
                 return false;
             });
+            $(".cont-menu #menu .btn").click(function(){
+                console.log(isMobile());
+                if(isMobile()==true){
+                    $("#cont-bars a").trigger("click");
+                }
+            });
         });
+
+        function isMobile(){
+            try{ 
+                document.createEvent("TouchEvent"); 
+                return true; 
+            }catch(e){ 
+                return false;
+            }
+        }
     </script>
 </body>
 </html>

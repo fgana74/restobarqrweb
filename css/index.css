@@ -1,0 +1,456 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 800px){
+    .cont-1{
+        width:100vw;
+        height:15vh;
+        display:grid;
+        grid-template-columns:10% 70% 20%;
+        background-color:orangered;
+        position: fixed;
+    }
+
+    .cont-1 h2{
+        font-size: 6em;
+        font-family: 'Red Rose', cursive;
+        letter-spacing: -1px;
+        padding: 10px;
+        overflow-y: hidden;
+        text-shadow:2px 2px #000;
+        -webkit-text-shadow:2px 2px #000;
+        -moz-text-shadow:2px 2px #000;
+        
+    }
+    .cont-1 h3{
+        font-size: 1.7em;
+        padding:33px 0px 30px 30px;
+        color: white;
+        text-align:right;
+        overflow-y: hidden;
+        text-shadow:2px 2px #000;
+        -webkit-text-shadow:2px 2px #000;
+        -moz-text-shadow:2px 2px #000;
+        
+    }
+    .cont-1 #cont-rrss{
+        display:block;
+    }
+    .cont-1 #cont-bars{
+        display:none;
+    }
+    .cont-1 button{
+        width:80%;
+        margin:20px;
+        font-size: 22px;
+        font-family: 'Red Rose', cursive;
+    }
+
+    
+    .cont-menu{
+        width:100vw;
+        height:10vh;
+        margin-top: 15vh;
+        background-color:orangered;
+        position: fixed;
+    }
+    .cont-menu #menu{
+        display: grid;
+        grid-template-columns: auto repeat(5,12%);
+        grid-column:1 / span 3;
+        margin:0px 40px 20px 0px;
+        overflow-y: hidden;
+    }
+    .cont-menu #menu a{
+        font-size: 1.5em;
+        font-family: 'Red Rose', cursive;
+        padding:10px;
+        margin:0px 7px 0px 0px;
+        overflow-y: hidden;
+    }
+    .cont-menu #menu .primero{
+        grid-column-start:2;
+    }
+   
+
+
+    .cont-2{
+        width:100vw;
+        margin-top:25vh;
+        min-height:75vh;
+        background-image: url(../img/head-3.jpg);
+        background-position: 50% 50%;
+        background-repeat:no-repeat;
+        background-size: cover;
+    }  
+    
+
+    .cont-3{
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-gap:20px;
+        padding:40px;
+        margin-top:25vh;
+        height:75vh;
+        width:100vw;
+        background-image: url(../img/menu-11.jpg);
+        background-position: 10% 10%;
+        
+        background-repeat: no-repeat;
+        /*clip-path: polygon(0 0, 100% 0%, 49% 54%, 0% 100%);*/
+    }
+
+    .cont-3 h2{
+        padding:20px;
+        font-size: 3.5em;
+        font-family: 'Red Rose', cursive;
+    }
+    .cont-3 h3{
+        padding:20px;
+        font-size: 28px;
+        font-family: 'Red Rose', cursive;
+        line-height: 1.5em;
+        text-align: justify;
+        
+    }
+
+
+    .cont-4{
+        display: grid;
+        grid-template-columns: auto 65%;
+        grid-gap:20px;
+        padding:40px;
+        margin-top:25vh;
+        height:75vh;
+        width:100vw;
+        background-image: url(../img/menu-2.jpg);
+        background-position: 10% 10%;
+        background-repeat: no-repeat;
+        /*clip-path: polygon(0 0, 100% 0%, 49% 54%, 0% 100%);*/
+    }
+
+    .cont-4 h2{
+        padding:20px;
+        font-size: 3.5em;
+        font-family: 'Red Rose', cursive;
+    }
+    .cont-4 #c4v{
+        grid-column-start:2;
+    }
+    .cont-4 #lst-v{
+        display: grid;
+        grid-template-columns:5% auto;
+        grid-gap:10px;
+        padding:30px;
+    }
+    .cont-4 #lst-v span{
+        font-size: 1.8em;
+        font-family: 'Red Rose', cursive;
+    }
+
+
+
+    .cont-5{
+        display: grid;
+        grid-gap:20px;
+        padding:40px;
+        margin-top:25vh;
+        height:75vh;
+        width:100vw;
+    }
+    .cont-5 h2{
+        padding:10px;
+        font-size: 3.5em;
+        font-family: 'Red Rose', cursive;
+    }
+    .cont-5 #lst-p{
+        display: grid;
+        grid-template-columns: repeat(3,33%) auto;
+    }
+    .cont-5 #lst-p span{
+        margin:50px;
+        border-radius: 10px;
+        overflow-y: hidden;
+    }
+    .cont-5 #lst-p h3{
+        padding:20px;
+        font-size: 1.8em;
+        font-family: 'Red Rose', cursive;
+        color:floralwhite;
+        text-align: center;
+    }
+    .cont-5 #lst-p p{
+        margin:20px;
+        font-size: 1.3em;
+        font-family: 'Red Rose', cursive;
+    }
+    .cont-5 .noact{
+        color:#c1c1c1;
+        text-decoration-line:line-through;
+    }
+
+    .cont-6{
+        display: grid;
+        grid-gap:20px;
+        padding:40px;
+        margin-top:25vh;
+        height:75vh;
+        width:100vw;
+    }
+    .cont-6 #lst-c{
+        display:grid;
+        grid-template-columns:repeat(2,50%);
+        overflow-y:hidden;
+    }
+    .cont-6 #lst-c span{
+        padding:50px;
+        font-size: 1.8em;
+        font-family: 'Red Rose', cursive;
+    }
+
+    .cont-7{
+        padding:40px;
+        margin-top:25vh;
+        height:75vh;
+        width:100vw;
+        text-align: center;
+    }
+    
+    .cont-7 #form-c form{
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap:30px;
+        margin:50px;
+    }
+    .cont-7 #form-c form label{
+        font-size: 1.5em;
+        font-family: 'Red Rose', cursive;
+        text-align: right;
+    }
+    .cont-7 #form-btn{
+        display:grid;
+        grid-template-columns:33% 33% 34%;
+        overflow-y:hidden;
+    }
+    .cont-7 #form-btn button{
+        grid-column-start:3;
+    }
+    .cont-7 #form-btn button span{
+        font-size: 1.3em;
+        font-family: 'Red Rose', cursive;
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 799px){
+    .cont-1{
+        width:100vw;
+        height:13vh;
+        display:grid;
+        grid-template-columns:13% 65% 22%;
+        background-color:orangered;
+        position: fixed;
+    }
+    .cont-1 h2{
+        font-size: 3em;
+        font-family: 'Red Rose', cursive;
+        margin:25px 0px 0px 0px;
+        letter-spacing: -2px;
+        text-shadow:2px 2px #000;
+        -webkit-text-shadow:2px 2px #000;
+        -moz-text-shadow:2px 2px #000;
+    }
+    .cont-1 h3{
+        font-size: 0.8em;
+        text-align:right;
+        margin:35px 5px 0px 0px;
+        text-shadow:2px 2px #000;
+        -webkit-text-shadow:2px 2px #000;
+        -moz-text-shadow:2px 2px #000;
+    }
+    .cont-1 #cont-rrss{
+        display:none;
+    }
+    .cont-1 #cont-bars{
+        display:block;
+        padding:20px;
+    }
+    .cont-menu #menu{
+        position: fixed;
+        margin-top:13vh;
+        z-index:2;
+    }
+    .cont-menu #menu a{
+        font-size: 1.5em;
+        font-family: 'Red Rose', cursive;
+        padding:10px;
+        width:100%;
+        margin:0px 0px 0px 0px;
+    }
+  
+    .cont-1 span button{
+        width:95%;
+        margin:0px 10px 20px 10px;
+        font-size: 22px;
+        font-family: 'Red Rose', cursive;
+    }
+
+    .cont-2{
+        width:100vw;
+        min-height:87vh;
+        margin-top:13vh;
+        background-image: url(../img/head-3.jpg);
+        background-position: 50% 50%;
+        background-repeat:no-repeat;
+    }
+
+    .cont-3{
+        display: grid;
+        grid-template-columns: 100%;
+        padding:20px;
+        margin-top:13vh;
+        min-height:87vh;
+        width:100vw;
+    }
+
+    .cont-3 h2{
+        padding:20px;
+        font-size: 1.8em;
+        font-family: 'Red Rose', cursive;
+    }
+    .cont-3 h3{
+        padding:10px;
+        font-size: 1.4em;
+        font-family: 'Red Rose', cursive;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+
+    .cont-4{
+        display: grid;
+        grid-template-columns: 100%;
+        padding:20px;
+        margin-top:13vh;
+        min-height:87vh;
+        width:100vw;
+    }
+    .cont-4 h2{
+        padding:20px;
+        font-size: 1.7em;
+        font-family: 'Red Rose', cursive;
+    }
+    .cont-4 #c4v{
+        grid-column-start:1;
+    }
+    .cont-4 #lst-v{
+        display: grid;
+        grid-template-columns:10% auto;
+        grid-gap:10px;
+        padding:10px;
+    }
+    .cont-4 #lst-v span{
+        font-size: 1.4em;
+        font-family: 'Red Rose', cursive;
+        margin-top: 20px;
+    }
+
+    .cont-5{
+        margin-top:13vh;
+        min-height:87vh;
+        padding:20px;
+        width:100vw;
+    }
+    .cont-5 h2{
+        padding:10px;
+        font-size: 1.8em;
+        font-family: 'Red Rose', cursive;
+    }
+    .cont-5 #lst-p{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .cont-5 #lst-p span{
+        margin:5px 2px 40px 2px;
+        border-radius:10px;
+        width: 98%;
+        overflow-y: hidden;
+    }
+    .cont-5 #lst-p h3{
+        padding:20px;
+        font-size: 1.8em;
+        font-family: 'Red Rose', cursive;
+        color:floralwhite;
+        text-align: center;
+        margin:0px;
+    }
+    .cont-5 #lst-p p{
+        margin:20px;
+        font-size: 1.2em;
+        font-family: 'Red Rose', cursive;
+    }
+    .cont-5 .noact{
+        color:#c1c1c1;
+        text-decoration-line:line-through;
+    }
+
+
+    .cont-6{
+        display: grid;
+        grid-gap:10px;
+        padding:10px;
+        margin-top:13vh;
+        min-height:87vh;
+        width:100vw;
+    }
+    .cont-6 #lst-c{
+        display:grid;
+        grid-template-columns:100%;
+        overflow-y:hidden;
+    }
+    .cont-6 #lst-c span{
+        padding:20px;
+        font-size: 1.8em;
+        font-family: 'Red Rose', cursive;
+    }
+
+    .cont-7{
+        padding:20px;
+        margin-top:13vh;
+        min-height:87vh;
+        width:100vw;
+        text-align: center;
+    }
+    
+    .cont-7 #form-c form{
+        display: grid;
+        grid-template-columns: 100%;
+        margin:10px;
+    }
+    .cont-7 #form-c form label{
+        display:none;
+    }
+    .cont-7 #form-c input,textarea{
+        margin:0px 0px 30px 0px;
+        border:3px solid #000;
+    }
+    .cont-7 #form-c form #form-btn{
+        display:grid;
+        grid-template-columns:100%;
+        margin-top:30px;
+        overflow-y:hidden;
+    }
+    .cont-7 #form-c form #form-btn button{
+        grid-column-start:1;
+    }
+    .cont-7 #form-c form #form-btn button span{
+        font-size: 1.3em;
+        font-family: 'Red Rose', cursive;
+        text-align: left;
+    }
+
+}
